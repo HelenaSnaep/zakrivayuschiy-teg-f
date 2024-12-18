@@ -15,18 +15,13 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-family-main), Arial, Helvetica, sans-serif;
+  font-variation-settings: "wght" 400 700;
   font-weight: var(--font-weight-main-text, 400);
   font-size: 18px;
   background-image: var(--page-bg-image);
   background-size: cover;
   background-attachment: fixed;
   inline-size: 100%;
-}
-
-@supports (font-variation-settings: normal) {
-  .page {
-    font-variation-settings: "wght" var(--font-weight-main-text, 400);
-  }
 }
 
 .header {
