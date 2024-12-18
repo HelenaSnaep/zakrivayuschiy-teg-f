@@ -24,6 +24,14 @@
   inline-size: 100%;
 }
 
+@supports (font-variation-settings: normal) {
+  .page {
+    font-family: var(--font-family-main), Arial, Helvetica, sans-serif;
+    font-variation-settings: "wght" var(--font-weight-main-text, 400);
+  }
+}
+
+
 .header {
   margin-block: 100px;
 }
@@ -99,7 +107,7 @@
 }
 
 .filter-hue {
-  filter: hue-rotate(90deg);
+  filter: hue-rotate(90deg) brightness(1.2) contrast(1.5);
 }
 
 .filter-sepia {
@@ -366,3 +374,4 @@
     padding-inline: 40px;
   }
 }
+
