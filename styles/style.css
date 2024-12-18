@@ -17,7 +17,6 @@
   font-family: var(--font-family-main), Arial, Helvetica, sans-serif;
   font-weight: var(--font-weight-main-text, 400);
   font-size: 18px;
-  font-variation-settings: "wgth" var(--font-weight-main-text, 400);
   background-image: var(--page-bg-image);
   background-size: cover;
   background-attachment: fixed;
@@ -26,11 +25,9 @@
 
 @supports (font-variation-settings: normal) {
   .page {
-    font-family: var(--font-family-main), Arial, Helvetica, sans-serif;
     font-variation-settings: "wght" var(--font-weight-main-text, 400);
   }
 }
-
 
 .header {
   margin-block: 100px;
@@ -374,4 +371,3 @@
     padding-inline: 40px;
   }
 }
-
